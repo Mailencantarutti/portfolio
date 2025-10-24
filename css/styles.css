@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/* Secciones */
+section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #1e1e2f;
+}
+
+/* Skills */
+.skills .skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills .skill-icons img {
+    width: 60px;
+    transition: transform 0.3s;
+}
+
+.skills .skill-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Proyectos */
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-links a:hover {
+    color: #6a11cb;
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #6a11cb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
